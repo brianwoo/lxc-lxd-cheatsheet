@@ -12,5 +12,7 @@ lxc config set $CONTAINER_NAME security.nesting true
 
 # Set container to share directory with the host
 ```bash
-lxc config device add $CONTAINER_NAME $SOMENAME disk source="/dir_from_host" path="/home/user/dir_on_container"
+lxc config device add $CONTAINER_NAME $SOMENAME disk \
+  source="/dir_from_host" \
+  path="/home/user/dir_on_container"
 ```
